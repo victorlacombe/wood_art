@@ -1,9 +1,9 @@
-class CreateFurnitures < ActiveRecord::Migration[5.2]
+class CreateItems < ActiveRecord::Migration[5.2]
   def change
-    create_table :furnitures do |t|
+    create_table :items do |t|
       t.string :name
       t.text :description
-      t.integer :price
+      t.string :price
       t.string :category
 
       t.timestamps
